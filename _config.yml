@@ -3,16 +3,16 @@ description:
 baseurl:
 author: June Castillote
 github: https://github.com/junecastillote
-about: IT Consultant, Messaging and Collaboration, Freelance Author, PowerShell Fanatic
+about: IT Consultant, Freelance Tech Writer, PowerShell Fanatic
 disqus_shortname: lazyexchangeadmin
-google_analytics: UA-XXXXXXXX-Y
+google_analytics: UA-157526958-1
 
 enableTags: true
 tagarray: []
 
 collections:
   project:
-    output: true
+    output: false
     permalink: /project/:path/
   authors:
     output: true
@@ -26,17 +26,21 @@ social:
       link: "https://www.linkedin.com/in/junecastillote/"
     - icon: fa-github
       link: "https://github.com/junecastillote"
-    - icon: fa-google-plus
+    - icon: fa-envelope
       link: "mailto:june.castillote@gmail.com"
 
 share:
   twitter_username: junecastillote
-  fb_appid: 1749788565247320
+  fb_appid: 
 
 urls:
     - text: About Me
       url: /about/
-    - text: XML Feed
+    - text: Authors
+      url: /author/
+    - text: Category
+      url: /category/
+    - text: RSS Feed
       url: /feed.xml
 
 url: "https://junecastillote.github.io"
@@ -45,9 +49,7 @@ paginate: 20
 per_page: 20
 paginate_path: "/page/:num/"
 markdown: kramdown
-gems:
-  - jekyll-paginate
-  - jekyll-gist
+plugins: [jekyll-paginate,jekyll-gist]
 
 compress_html:
   clippings: all

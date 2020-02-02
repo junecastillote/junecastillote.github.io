@@ -1,4 +1,5 @@
 ---
+layout: author
 short_name: June
 name: June Castillote
 ---
