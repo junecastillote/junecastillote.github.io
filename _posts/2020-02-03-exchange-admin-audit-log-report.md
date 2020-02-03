@@ -37,14 +37,14 @@ Use this if you can't install the module from PSGallery.
 1. Download or clone from the [GitHub Repository](https://raw.githubusercontent.com/junecastillote/ExCmdReport).
 2. Extract the zip and run `.\InstallMe.ps1` in PowerShell.
 
-![Install Selection](https://raw.githubusercontent.com/junecastillote/ExCmdReport/master/images/SampleOutput01.png)
+![Install Selection](https://raw.githubusercontent.com/junecastillote/ExCmdReport/master/images/SampleInstall.png)
 
 ## Usage Examples
 
 ### Example 1: Get Admin Audit Log Entries
 
 {% highlight powershell %}
-# Get ALL log entries
+<# Get ALL log entries #>
 Get-ExCmdLog -searchParamHash @{
     StartDate      = '10/01/2019'
     EndDate        = '10/10/2019'
@@ -57,7 +57,7 @@ Get-ExCmdLog -searchParamHash @{
 ### Example 2: Get Admin Audit Log Entries and Send Email Report
 
 {% highlight powershell %}
-# Build report parameters
+<# Build report parameters #>
 $report = @{
     SendEmail = $true
     From = 'admin@domain.com'
@@ -69,7 +69,7 @@ $report = @{
     TruncateLongValue = 50
 }
 
-# Get Audit Logs and then send
+<# Get Audit Logs and then send #>
 Get-ExCmdLog -searchParamHash @{
     StartDate      = '10/01/2019'
     EndDate        = '10/10/2019'
