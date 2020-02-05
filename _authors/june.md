@@ -10,4 +10,4 @@ June's work from other sites:
 * [Adam the Automator](https://adamtheautomator.com/author/june/)
 * [Progress / IPSwitch](https://blog.ipswitch.com/author/june-castillote)
 
-email: june.castillote@gmail.com
+Email: [june.castillote[at]gmail[dot]com](mailto:june.castillote@gmail.com){:target="_blank"}
