@@ -3,7 +3,7 @@ layout: post
 title:  "Monitoring and Reporting Exchange Admin Audit Logs"
 date:   2020-02-03 00:15:0 +0800
 categories: [powershell,Office 365]
-authr: June Castillote
+author: June Castillote
 ---
 # ExCmdReport Module
 
