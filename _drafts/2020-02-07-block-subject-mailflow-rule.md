@@ -3,7 +3,7 @@ layout: post
 title:  "Office 365 Mail Flow Rule: Block Messages Based on Subject"
 date:   2020-02-07 23:10:0 +0800
 categories: [Office 365]
-author: June Castillote
+author: Mark Daniel Dimalanta
 ---
 # Office 365 Mail Flow Rule: Block Messages Based on Subject
 
