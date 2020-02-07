@@ -5,8 +5,6 @@ date:   2020-02-07 23:10:0 +0800
 categories: [Office 365]
 author: Mark Daniel Dimalanta
 ---
-# Office 365 Mail Flow Rule: Block Messages Based on Subject
-
 Email is a vital business enabler in most organizations, and it is a trusted medium of communication in which business or personal information is often shared. This makes email a prime target for attackers and interceptors.
 
 Spam and phishing are the most common types of threats that an Exchange administrator must work on. However, these threats can be tricky, and at times, you may need to resort to using [*mail flow rules*](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) to combat those that made it past the perimeter mail checks.
@@ -70,7 +68,7 @@ Follow the steps below to create a mail flow rule that will block all incoming a
 
     ![IMAGE_Untitled%2010.png](https://raw.githubusercontent.com/junecastillote/junecastillote.github.io/master/static/img/_posts/block-subject-mailflow-rule/Untitled%2010.png)
 
-    Priority indicates the order that the rules are applied to messages. The default priority is based on when the rule is created (older rules have a higher priority than newer rules, and higher priority rules are processed before lower priority rules). 0 will be the top in the priority list.
+    > *NOTE: Priority indicates the order that the rules are applied to messages. The default priority is based on when the rule is created (older rules have a higher priority than newer rules, and higher priority rules are processed before lower priority rules). 0 will be the top in the priority list.*
 
 - Leave the audit option to **Not specified** as we have no intention to audit the number of times this rule will be matched.
 
@@ -86,9 +84,7 @@ Follow the steps below to create a mail flow rule that will block all incoming a
 
 - Click **Save**
 
-    ![IMAGE_Untitled%2014.png](https://raw.githubusercontent.com/junecastillote/junecastillote.github.io/master/static/img/_posts/block-subject-mailflow-rule/Untitled%2014.png)
-
-After mail flow rule is created or modified, it can take up to 30 minutes for the new or updated rule to be applied to messages.
+> *NOTE: After mail flow rule is created or modified, it can take up to 30 minutes for the new or updated rule to be applied to messages.*
 
 - Refer to the screenshot below for the complete settings of the mail flow rule.
 
