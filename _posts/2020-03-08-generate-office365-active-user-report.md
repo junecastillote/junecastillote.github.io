@@ -2,7 +2,7 @@
 layout: post
 title:  "How to Generate an Office 365 Active User Report using PowerShell and Microsoft Graph REST API"
 date:   2020-03-08 19:59:00 +0800
-categories: [AzureAD]
+categories: [AzureAD,Office 365]
 author: Mark Daniel Dimalanta
 ---
 

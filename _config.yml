@@ -36,13 +36,13 @@ share:
 
 urls:
     - text: About Me
-      url: /about/
+      url: /authors/june
     - text: Authors
       url: /author/
     - text: Category
       url: /category/
-    - text: RSS Feed
-      url: /feed.xml
+    # - text: RSS Feed
+    #   url: /feed.xml
 
 url: "https://junecastillote.github.io"
 baseurl: ""
