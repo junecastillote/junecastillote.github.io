@@ -1,7 +1,7 @@
 # Site
 name: "LazyExchangeAdmin"
 title: "LazyExchangeAdmin"
-description: PowerShell, Exchange, Office 365, Automation
+description: "PowerShell, Exchange, Office 365, Automation"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logoonly.png'
 baseurl:
