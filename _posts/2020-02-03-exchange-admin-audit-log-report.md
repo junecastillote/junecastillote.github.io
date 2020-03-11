@@ -1,9 +1,15 @@
 ---
 layout: post
 title:  "Monitoring and Reporting Exchange Admin Audit Logs"
-date:   2020-02-03 00:15:0 +0800
-categories: [powershell,Office 365]
-author: June Castillote
+author: june
+categories: [PowerShell,Office 365]
+tags: [script,audit,module]
+image: assets/images/coding01.jpg
+description: "Use PowerShell to Monitor and Report Exchange Admin Audit Logs"
+featured: true
+hidden: true
+toc: true
+comments: true
 ---
 # ExCmdReport Module
 
@@ -28,7 +34,7 @@ This module was tested with the following.
 
 ### Option 1: Install from PSGallery
 
-`Install-Module ExCmdReport -Scope AllUsers`
+    Install-Module ExCmdReport -Scope AllUsers
 
 ### Option 2: Download from GitHub and install manually
 
@@ -43,39 +49,35 @@ Use this if you can't install the module from PSGallery.
 
 ### Example 1: Get Admin Audit Log Entries
 
-{% highlight powershell %}
-<# Get ALL log entries #>
-Get-ExCmdLog -searchParamHash @{
-    StartDate      = '10/01/2019'
-    EndDate        = '10/10/2019'
-    ExternalAccess = $false
-} -Verbose -resolveAdminName
-{% endhighlight %}
+    <# Get ALL log entries #>
+    Get-ExCmdLog -searchParamHash @{
+        StartDate      = '10/01/2019'
+        EndDate        = '10/10/2019'
+        ExternalAccess = $false
+    } -Verbose -resolveAdminName
 
 ![Get Admin Audit Log Entries](https://raw.githubusercontent.com/junecastillote/ExCmdReport/master/images/SampleOutput01.png)
 
 ### Example 2: Get Admin Audit Log Entries and Send Email Report
 
-{% highlight powershell %}
-<# Build report parameters #>
-$report = @{
-    SendEmail = $true
-    From = 'admin@domain.com'
-    To = 'user1@domain.com','user2@domain.com'
-    smtpServer = 'smtp.office365.com'
-    port = 587
-    UseSSL = $true
-    Credential = (Get-Credential)
-    TruncateLongValue = 50
-}
+    <# Build report parameters #>
+    $report = @{
+        SendEmail = $true
+        From = 'admin@domain.com'
+        To = 'user1@domain.com','user2@domain.com'
+        smtpServer = 'smtp.office365.com'
+        port = 587
+        UseSSL = $true
+        Credential = (Get-Credential)
+        TruncateLongValue = 50
+    }
 
-<# Get Audit Logs and then send #>
-Get-ExCmdLog -searchParamHash @{
-    StartDate      = '10/01/2019'
-    EndDate        = '10/10/2019'
-    ExternalAccess = $false
-} -Verbose -resolveAdminName | Write-ExCmdReport @report -Verbose
-{% endhighlight %}
+    <# Get Audit Logs and then send #>
+    Get-ExCmdLog -searchParamHash @{
+        StartDate      = '10/01/2019'
+        EndDate        = '10/10/2019'
+        ExternalAccess = $false
+    } -Verbose -resolveAdminName | Write-ExCmdReport @report -Verbose
 
 ![Get Admin Audit Log Entries and Send Email Report](https://raw.githubusercontent.com/junecastillote/ExCmdReport/master/images/SampleEmailReport.png)
 

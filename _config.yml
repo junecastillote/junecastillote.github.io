@@ -1,60 +1,79 @@
-permalink: /:title/
-title: LazyExchangeAdmin
-description: 
+# Site
+name: "LazyExchangeAdmin"
+title: "LazyExchangeAdmin"
+description:
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logoonly.png'
 baseurl:
-author: June Castillote
-github: https://github.com/junecastillote
-about: IT Consultant, Freelance Tech Writer, PowerShell Fanatic
-disqus_shortname: lazyexchangeadmin
-google_analytics: UA-157526958-1
+google_analytics: 'UA-157526958-1'
+disqus: 'lazyexchangeadmin'
+mailchimp-list: #'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+include: ["_pages"]
+permalink: /:title/
 
-enableTags: true
-tagarray: []
+# Authors
+authors:
+  dan:
+    name: dan
+    display_name: Mark Daniel Dimalanta
+    avatar: 'assets/images/dan.jpg'
+    gravatar:
+    email: danieldimalanta@gmail.com
+    web:
+    twitter:
+    facebook: https://facebook.com/myvie14
+    linkedin: https://www.linkedin.com/in/dandimalanta/
+    github: https://github.com/danieldimalanta
+    description: "An innovator at heart. Enjoys simplifying complex processes and automating routine tasks."
+  june:
+    name: June
+    display_name: June Castillote
+    avatar: 'assets/images/june.jpg'
+    gravatar:
+    email: june.castillote@gmail.com
+    web: https://www.lazyexchangeadmin.com
+    twitter: https://twitter.com/junecastillote
+    facebook: https://facebook.com/june.castillote
+    linkedin: https://www.linkedin.com/in/junecastillote/
+    github: https://github.com/junecastillote
+    description: "IT Engineer, Consultant, Freelance Writer, Blogger, and Coder"
 
-collections:
-  project:
-    output: false
-    permalink: /project/:path/
-  authors:
-    output: true
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
 
-social:
-    - icon: fa-facebook
-      link: "https://www.facebook.com/june.castillote"
-    - icon: fa-twitter
-      link: "https://twitter.com/junecastillote"
-    - icon: fa-linkedin
-      link: "https://www.linkedin.com/in/junecastillote/"
-    - icon: fa-github
-      link: "https://github.com/junecastillote"
-    - icon: fa-envelope
-      link: "mailto:june.castillote@gmail.com"
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
 
-share:
-  twitter_username: junecastillote
-  fb_appid: 
+# Pagination
+paginate: 6
+paginate_path: /page:num/
 
-urls:
-    - text: About Me
-      url: /authors/june
-    - text: Authors
-      url: /author/
-    - text: Category
-      url: /category/
-    # - text: RSS Feed
-    #   url: /feed.xml
-
-url: "https://junecastillote.github.io"
-baseurl: ""
-paginate: 20
-per_page: 20
-paginate_path: "/page/:num/"
+# Other
 markdown: kramdown
-plugins: [jekyll-paginate,jekyll-gist]
 
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  ignore:
-    envs: ['development']
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3412143450191416"
+adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
