@@ -11,7 +11,7 @@ hidden: true
 toc: true
 comments: true
 ---
-# ExCmdReport Module
+## ExCmdReport Module
 
 This module uses the `Search-AdminAuditLog` Exchange CmdLet under the hood. This can be used to retrieve Exchange Admin Audit Logs from Exchange Online or Exchange Server On-Premises. It uses pagination automatically so that it can retrieve any number of results.
 
