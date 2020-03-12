@@ -7,7 +7,7 @@ tags: [script,audit,module]
 image: assets/images/coding01.jpg
 description: "Use PowerShell to Monitor and Report Exchange Admin Audit Logs"
 featured: true
-hidden: true
+hidden: false
 toc: true
 comments: true
 ---

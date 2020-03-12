@@ -7,7 +7,7 @@ tags: [ssl,certificate,script,module]
 image: assets/images/monitor-ssl.jpg
 description: "Use PowerShell to Monitor and Report SSL Certificate Expiration"
 featured: true
-hidden: true
+hidden: false
 toc: true
 comments: true
 ---

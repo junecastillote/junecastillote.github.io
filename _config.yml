@@ -58,6 +58,9 @@ jekyll-archives:
 paginate: 6
 paginate_path: /page:num/
 
+# Feature Post ("enabled" or "disabled")
+featured_post: disabled
+
 # Other
 markdown: kramdown
 

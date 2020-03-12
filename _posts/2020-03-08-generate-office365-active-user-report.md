@@ -7,7 +7,7 @@ tags: [rest,api,script]
 image: assets/images/generate-office365-active-user-report/post-image.jpg
 description: "Learn how to automate the Office 365 active users report using Microsoft Graph API and PowerShell script."
 featured: true
-hidden: true
+hidden: false
 toc: true
 comments: true
 ---
