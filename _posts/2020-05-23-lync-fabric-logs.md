@@ -12,8 +12,6 @@ toc: true
 comments: true
 ---
 
-# Lync Server: Windows Fabric Logs, Disk Space Usage, and Circular Logging
-
 > *Originally posted on February 15, 2017*
 
 I know there have been many articles written and available for this topic. The reason I decided to still write this is to provide more explanation to some possible questions that I also found myself asking as well about the subject.
