@@ -99,7 +99,7 @@ Type: String (directory path)
 Description: Path to where the reports will be saved.
 Example: C:\scripts\report
 
-Optional Parameters
+## Optional Parameters
 -nameServer
 Type: String
 Description: Name or IP of the custom DNS Server to use for lookup. If not specified, script will use the local DNS Server IP of the machine.
