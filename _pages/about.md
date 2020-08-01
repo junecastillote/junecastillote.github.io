@@ -18,8 +18,8 @@ You may also want to visit my other works at the following sites:
 
 You may also contact and follow me:
 
-* [Email](mailto:june.castillote@gmail.com){:target="_blank"}
-* [Twitter](https://twitter.com/junecastillote){:target="_blank"}
-* [Facebook](https://facebook.com/june.castillote){:target="_blank"}
-* [LinkedIn](https://www.linkedin.com/in/junecastillote/){:target="_blank"}
-* [GitHub](https://github.com/junecastillote){:target="_blank"}
+* [Email](mailto:{{site.authors.june.email}}){:target="_blank"}
+* [Twitter]({{site.authors.june.twitter}}){:target="_blank"}
+* [Facebook]({{site.authors.june.facebook}}){:target="_blank"}
+* [LinkedIn]({{site.authors.june.linkedin}}){:target="_blank"}
+* [GitHub]({{site.authors.june.github}}){:target="_blank"}
