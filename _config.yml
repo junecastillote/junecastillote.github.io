@@ -3,7 +3,7 @@ name: "LazyExchangeAdmin"
 title: "LazyExchangeAdmin"
 description: "PowerShell, Exchange, Office 365, Automation"
 logo: 'assets/images/logo.png'
-favicon: 'assets/images/logoonly.png'
+favicon: 'assets/images/favicon.ico'
 baseurl: 
 google_analytics: 'UA-157526958-1'
 disqus: 'lazyexchangeadmin'
