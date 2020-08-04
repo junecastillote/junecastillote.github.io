@@ -2,9 +2,9 @@
 name: "LazyExchangeAdmin"
 title: "LazyExchangeAdmin"
 description: "PowerShell, Exchange, Office 365, Automation"
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
-baseurl: 
+logo: '/assets/images/logo.png'
+favicon: '/assets/images/favicon.ico'
+baseurl:
 google_analytics: 'UA-157526958-1'
 disqus: 'lazyexchangeadmin'
 mailchimp-list: #'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
