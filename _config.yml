@@ -13,10 +13,22 @@ permalink: /:title/
 
 # Authors
 authors:
+  arman:
+    name: arman
+    display_name: Arman Castillote
+    avatar: 'assets/images/author/arman.jpg'
+    gravatar:
+    email: castillote.arman@gmail.com
+    web:
+    twitter: https://twitter.com/castillotearman 
+    facebook: https://www.facebook.com/dianne15arman
+    linkedin: https://www.linkedin.com/in/acastillote
+    github: https://github.com/acast15
+    description: "An IT Specialist and aspiring Technical Writer. Optimistic and persistent in learning."
   dan:
     name: dan
     display_name: Mark Daniel Dimalanta
-    avatar: 'assets/images/dan.jpg'
+    avatar: 'assets/images/author/dan.jpg'
     gravatar:
     email: danieldimalanta@gmail.com
     web:
@@ -28,7 +40,7 @@ authors:
   june:
     name: June
     display_name: June Castillote
-    avatar: 'assets/images/june.jpg'
+    avatar: 'assets/images/author/june.jpg'
     gravatar:
     email: june.castillote@gmail.com
     web: https://www.lazyexchangeadmin.com
