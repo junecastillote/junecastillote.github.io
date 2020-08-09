@@ -12,7 +12,7 @@ toc: true
 comments: true
 ---
 
-> *Originally posted on Augist 18, 2018*
+> *Originally posted on August 18, 2018*
 
 When you manage an email system, you need to make sure that your organizations MX records are valid. It is but essential to be able to generate a report of all the DNS MX Records for your domains to monitor their validity or availability.
 
