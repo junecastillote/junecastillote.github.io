@@ -20,7 +20,7 @@ authors:
     gravatar:
     email: castillote.arman@gmail.com
     web:
-    twitter: https://twitter.com/castillotearman 
+    twitter: https://twitter.com/castillotearman
     facebook: https://www.facebook.com/dianne15arman
     linkedin: https://www.linkedin.com/in/acastillote
     github: https://github.com/acast15
@@ -49,6 +49,18 @@ authors:
     linkedin: https://www.linkedin.com/in/junecastillote
     github: https://github.com/junecastillote
     description: "IT Engineer, Consultant, Freelance Writer, Blogger, Coder"
+  rahul:
+    name: Rahul
+    display_name: Rahul Kadamb
+    avatar: 'assets/images/author/rahul.jpg'
+    gravatar:
+    email:
+    web:
+    twitter:
+    facebook:
+    linkedin: https://www.linkedin.com/in/rahul-kadamb
+    github:
+    description: "An IT Specialist, Freelance Writer, Tech Blogger"
 
 # Plugins
 plugins:
