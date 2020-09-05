@@ -56,7 +56,7 @@ Run Command
 
 ## Volume Partitioning Methods
 
-In this section, you will learn about the two partition methods; Extend Volume and Shrink Volume.  By the end of this section, By the end of this section, you should know the difference and which method to use based on your requirements.
+In this section, you will learn about the two partition methods; Extend Volume and Shrink Volume. By the end of this section, you should know the difference and which method to use based on your requirements.
 
 ### Extending Volumes
 
