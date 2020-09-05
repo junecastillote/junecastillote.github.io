@@ -155,7 +155,7 @@ New Simple Volume Wizard | Completing Volume Partition
 
 You can now see the volume has been successfully formatted and has the drive letter you previously selected (ex: "F:").
 
-![New_Volume_-_Extended1.png](/assets/images/New_Volume_-_Extended1.png)<br>
+![NewVolumeExtended1](/assets/images/NewVolumeExtended1.png)<br>
 Disk Management Tool | New Volume Created
 
 ## Summary
