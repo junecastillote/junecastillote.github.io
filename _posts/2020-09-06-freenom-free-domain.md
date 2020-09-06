@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to Get a Free Domain in Freenom"
+title:  "How to Get a Free Domain From Freenom"
 author: june
 categories: [DNS]
 tags: [Freenom,DNS,Domain]
