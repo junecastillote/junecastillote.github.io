@@ -5,13 +5,14 @@ author: june
 categories: [DNS]
 tags: [Freenom,DNS,Domain]
 image: assets/images/freenom/freenom-post-image.png
+imageattribution: Photo by <a href="https://www.pexels.com/@8moments?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"  target="_blank">Simon Matzinger</a>
 description: "Are you looking to get a free domain for temporary or permanent use? Then you should consider Freenom. Let me show you how!"
 featured: false
 hidden: false
 toc: true
 comments: true
 ---
-> Photo by [Simon Matzinger](https://www.pexels.com/@8moments?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/photo/silhouette-of-mountains-1323550/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
+> Photo by <a href='https://www.pexels.com/@8moments?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels'>Simon Matzinger</a>
 
 Yes, domains can be free. Well, that is if you would not mind using [Top-Level Domains (TLD)](https://www.namecheap.com/domains/what-is-a-tld-definition/) such as .TK, .ML, .CF, .GQ, and .GA. Other than the limited TLD options, there's essentially no difference between a free and paid domain in terms of usability.
 
