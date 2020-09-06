@@ -11,6 +11,7 @@ hidden: false
 toc: true
 comments: true
 ---
+> Photo by [Simon Matzinger](https://www.pexels.com/@8moments?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/photo/silhouette-of-mountains-1323550/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
 
 Yes, domains can be free. Well, that is if you would not mind using [Top-Level Domains (TLD)](https://www.namecheap.com/domains/what-is-a-tld-definition/) such as .TK, .ML, .CF, .GQ, and .GA. Other than the limited TLD options, there's essentially no difference between a free and paid domain in terms of usability.
 
