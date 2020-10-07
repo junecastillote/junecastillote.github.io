@@ -22,7 +22,7 @@ Is it possible to perform the partition without losing data? In this article, yo
 
 ## Requirements
 
-There will be step-by-step instructions in different sections of this article. You can follow along, but you need these requirements below.
+The requirements are simple and you probably already have them. See the requirements below.
 
 - A Windows 10 computer. Any version should work.
 - You must have administrator permissions on the local computer.
