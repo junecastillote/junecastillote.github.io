@@ -18,7 +18,7 @@ Having multiple partitions in a drive allows you to separate your personal files
 
 Is it possible to perform the partition without losing data? In this article, you will learn two methods to create a partition on your drive without rebooting your computer or reinstalling the operating system.
 
-> [What is a Partition](https://www.computerhope.com/jargon/p/partition.htm)
+> [*What is a Partition?*](https://www.computerhope.com/jargon/p/partition.htm)
 
 ## Requirements
 
