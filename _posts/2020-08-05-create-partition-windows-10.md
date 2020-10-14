@@ -98,7 +98,7 @@ Convert *basic disk* to *dynamic disk*
 
 If successful, you will see the extended volume/drive (ex: "F:") on the Disk Management Tool.
 
-![New_Volume_-_Extended.png](/assets/images/New_Volume_-_Extended.png)<br>
+![new_extended_volume.png](/assets/images/new_extended_volume.png)<br>
 Disk Management Tool | New Volume Created
 
 ### Shrinking Volumes
@@ -133,7 +133,7 @@ On the **New Simple Volume Wizard** initial page, click on **Next**.
 ![New_Simple_Volume.png](/assets/images/New_Simple_Volume.png)<br>
 New Simple Volume Wizard | Initial Page
 
-You can specify the size ****of the volume you want to create, or you can also use the amount of *Maximum disk space in MB* then click **Next.**
+You can specify the size of the volume you want to create, or you can also use the amount of *Maximum disk space in MB* then click **Next.**
 
 ![New_Volume_Size.png](/assets/images/New_Volume_Size.png)<br>
 New Simple Volume Wizard | Set Volume Size
