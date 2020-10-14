@@ -6,7 +6,7 @@ categories: [Windows]
 tags: [HowTo,Windows,Media,Install]
 image: assets/images/windows-media-creation-tool/banner.jpg
 description: "Better be prepared for when Windows 10 needs reinstalling. Learn how to create a Windows 10 installler with the media creation tool in this tutorial."
-imageattribution: Photo by <a href="https://www.pexels.com/@castorlystock?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" target="_blank">Castorly Stock</a>
+imageattribution: Photo by <a href="https://www.pexels.com/@castorlystock" target="_blank">Castorly Stock</a>
 featured: false
 hidden: false
 toc: true
