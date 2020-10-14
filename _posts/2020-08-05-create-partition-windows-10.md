@@ -3,7 +3,7 @@ layout: post
 title:  "How to Create Disk Partitions using Disk Management in Windows 10"
 author: arman
 categories: [Windows]
-tags: [HowTo]
+tags: [HowTo,Windows,Partition,Disk]
 image: assets/images/disk-partition-image.jpg
 description: "Back to basics on how to create disk partitions in Windows 10 using the Disk Management MMC snap-in."
 featured: false
