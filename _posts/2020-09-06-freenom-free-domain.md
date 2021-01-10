@@ -75,7 +75,7 @@ First, go to the [intoDNS](https://intodns.com/) website. Then, type in your dom
 
 ## Conclusion
 
-Freenom offers free domain name registration with unlimited free renewal options. Once you're registered a domain, you can manage your DNS records using Freenom's DNS Management tool.
+Freenom offers free domain name registration with unlimited free renewal options. Once you've registered a domain, you can manage your DNS records using Freenom's DNS Management tool.
 
 However, you must understand that the type of DNS records that you can create using the built-in DNS management is limited to *A*, *AAAA*, *CNAME*, *LOC*, *MX*, *NAPTR*, *RP*, and *TXT*.
 
