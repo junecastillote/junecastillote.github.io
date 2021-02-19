@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How To Check If You Have An Administrator Account On A Computer"
+title:  "How To Check If You're An Administrator"
 author: june
 categories: [How-To,Windows,macOS]
 tags: [macOS,Windows 10,Administrator]
