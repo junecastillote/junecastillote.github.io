@@ -31,7 +31,7 @@ If you need to access the contents of a Bitlocker-locked drive in Windows Preins
 
 1. Run **Deployment and Imaging Tools Environment** as administrator.
 
-    ![Untitled](/assets/images/bitlocker-winpe/Untitled1.png)
+    ![Untitled](../assets/images/bitlocker-winpe/Untitled1.png)
 
 2. Run the command below to copy the working files to the *c:\WinPE_amd64* directory. You can use any directory you want.
 
