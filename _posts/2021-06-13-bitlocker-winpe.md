@@ -84,7 +84,7 @@ If you need to access the contents of a Bitlocker-locked drive in Windows Preins
     ```
 
 6. Create the bootable WinPE image / media.
-    - WinPE ISO. This command will create the ISO in *C:\WinPE_amd64\WinPE_amd64.iso*. To use this image, you will need to burn the ISO to a CD or DVD. Another option is to create a bootable USB drive with it using a utility like [Rufus](https://rufus.ie/en_US/).
+    - **WinPE ISO** -- This command will create the ISO in *C:\WinPE_amd64\WinPE_amd64.iso*. To use this image, you will need to burn the ISO to a CD or DVD. Another option is to create a bootable USB drive with it using a utility like [Rufus](https://rufus.ie/en_US/).
 
         ```powershell
         MakeWinPEMedia /ISO C:\WinPE_amd64 C:\WinPE_amd64\WinPE_amd64.iso
@@ -92,7 +92,7 @@ If you need to access the contents of a Bitlocker-locked drive in Windows Preins
 
         ![Untitled4](../assets/images/bitlocker-winpe/Untitled4.png)
 
-    - USB. This command will install WinPE to the USB drive U:
+    - **USB** -- This command will install WinPE to the USB drive U:
 
         ```powershell
         MakeWinPEMedia /UFD C:\WinPE_amd64 U:
