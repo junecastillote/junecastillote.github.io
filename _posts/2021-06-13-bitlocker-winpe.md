@@ -31,7 +31,7 @@ If you need to access the contents of a Bitlocker-locked drive in Windows Preins
 
 1. Run **Deployment and Imaging Tools Environment** as administrator.
 
-    ![Untitled.png](assets/images/bitlocker-winpe/Untitled%201.png)
+    ![Untitled](/assets/images/bitlocker-winpe/Untitled1.png)
 
 2. Run the command below to copy the working files to the *c:\WinPE_amd64* directory. You can use any directory you want.
 
@@ -39,7 +39,7 @@ If you need to access the contents of a Bitlocker-locked drive in Windows Preins
     copype.cmd amd64 c:\WinPE_amd64
     ```
 
-    ![Untitled%201.png](assets/images/bitlocker-winpe/Untitled%201.png)
+    ![Untitled1](/assets/images/bitlocker-winpe/Untitled1.png)
 
 3. Mount the WinPE Image.
 
@@ -47,7 +47,7 @@ If you need to access the contents of a Bitlocker-locked drive in Windows Preins
     Dism /Mount-Image /ImageFile:"C:\WinPE_amd64\media\sources\boot.wim" /Index:1 /MountDir:"C:\WinPE_amd64\mount"
     ```
 
-    ![Untitled%202.png](assets/images/bitlocker-winpe/Untitled%202.png)
+    ![Untitled2](/assets/images/bitlocker-winpe/Untitled2.png)
 
 4. Add the BitLocker-required package to the Win PE image by running the commands below, one at a time.
 
@@ -75,7 +75,7 @@ If you need to access the contents of a Bitlocker-locked drive in Windows Preins
     Dism /Image:"C:\WinPE_amd64\mount" /add-package /packagepath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-SecureStartup_en-us.cab"
     ```
 
-    ![Untitled%203.png](assets/images/bitlocker-winpe/Untitled%203.png)
+    ![Untitled3](/assets/images/bitlocker-winpe/Untitled3.png)
 
 5. Unmount the WinPE image and commit the changes.
 
@@ -90,7 +90,7 @@ If you need to access the contents of a Bitlocker-locked drive in Windows Preins
         MakeWinPEMedia /ISO C:\WinPE_amd64 C:\WinPE_amd64\WinPE_amd64.iso
         ```
 
-        ![Untitled%204.png](assets/images/bitlocker-winpe/Untitled%204.png)
+        ![Untitled4](/assets/images/bitlocker-winpe/Untitled4.png)
 
     - USB. This command will install WinPE to the USB drive U:
 
@@ -107,6 +107,6 @@ If you need to access the contents of a Bitlocker-locked drive in Windows Preins
     manage-bde -unlock c: -recoverypassword [recovery key]
     ```
 
-    ![Untitled%205.png](assets/images/bitlocker-winpe/Untitled%205.png)
+    ![Untitled5](/assets/images/bitlocker-winpe/Untitled5.png)
 
 Now you can access the contents of the drive.
