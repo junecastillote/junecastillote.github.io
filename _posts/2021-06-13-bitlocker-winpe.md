@@ -24,7 +24,7 @@ If you need to access the contents of a Bitlocker-locked drive in Windows Preins
 
 ## Requirements
 
-- Install the [*Windows ADK* and *Windows PE Add-on*](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#other-adk-downloads)* on your computer. This guide will be using Windows ADK for Windows 10 and Add-on version 2004.
+- Install the [*Windows ADK* and *Windows PE Add-on*](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#other-adk-downloads) on your computer. This guide will be using Windows ADK for Windows 10 and Add-on version 2004.
 - You should know your drive's [Bitlocker recovery key(s)](https://adamtheautomator.com/bitlocker-recovery-key/).
 
 ## Creating the WinPE Bootable Image / Media
