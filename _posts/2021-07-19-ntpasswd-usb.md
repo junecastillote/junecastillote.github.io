@@ -28,7 +28,7 @@ There are two ways to use NTPasswd; from a CD or USB. In this post, you will lea
 ## Requirements
 
 1. An empty USB flash drive.
-2. A Windows computer where you'll create the bootable USB.
+2. A Windows computer where you'll create the bootable USB. This tutorial will be using a Windows 10 PC.
 3. Download the [NTPasswd USB installer](https://pogostick.net/~pnh/ntpasswd/usb140201.zip). As of this writing, the latest installer file name is *usb140201.zip*.
 
 ## Creating the NTPasswd Bootable USB Drive
