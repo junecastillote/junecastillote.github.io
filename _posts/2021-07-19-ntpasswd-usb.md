@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to Create an NTPasswd Bootable USB"
+title:  "How to Create an NTPasswd Bootable USB Drive"
 author: june
 categories: [How-To,Windows]
 tags: [Password,Windows 10,Administrator]
