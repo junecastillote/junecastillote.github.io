@@ -161,7 +161,7 @@ Other `Send-MFAReport` parameters:
 
 If sending through an authenticated SMTP relay such as Exchange Online, use the code below as example:
 
-```PowerShell
+```powershell
 # Create the SMTP credential object programmatically
 $userName = 'username here'
 $userPassword = 'password here' | ConvertTo-SecureString -AsPlainText -Force
