@@ -87,6 +87,7 @@ featured_post: disabled
 
 # Other
 markdown: kramdown
+highlighter: rouge
 
 kramdown:
   input: GFM
