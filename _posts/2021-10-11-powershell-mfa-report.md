@@ -4,9 +4,8 @@ title:  "Generating Azure AD MFA Status Report Using PowerShell"
 author: june
 categories: [AzureAD,Office 365,Scripts]
 tags: [powershell,mfa,administrator,report]
-# image: assets/images/ntpasswd-usb/post-image.jpg
-# imageattribution: Photo by <a href="https://www.pexels.com/@pratikgupta?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" target="_blank">Pratik Gupta</a>
-
+image: assets/images/powershell-mfa-report/post_image.jpg
+imageattribution: Photo by <a href="https://www.pexels.com/@eye4dtail?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" target="_blank">George Becker</a>
 description: "Generate MFA status report with summary and graphs using the PsMFAStateReport PowerShell module."
 featured: false
 hidden: false
@@ -193,7 +192,7 @@ Send-MFAReport @mail_splat
 
 The image below is similar to what your recipient should recieve in their email. As you can see, there are four visual cards that shows the summary of different MFA-related statistics.
 
-> Admittedly, I am not a UI designer :)
+> Admittedly, I am not a UI/UX designer :)
 
 ![Email Report](../assets/images/powershell-mfa-report/06-emailreport.png)
 
