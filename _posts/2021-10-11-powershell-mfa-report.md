@@ -44,7 +44,7 @@ However, in most cases, admins will want to set up scheduled and unattended repo
 
 > *Note: Since this module depends on the `MSOnline` module, it follows that you can only use this module reliably in Windows PowerShell 5.1 at the latest.*
 
-1. Download the [latest release](https://github.com/junecastillote/PsMFAStateReport/releases).
+1. Download the [latest release](https://github.com/junecastillote/PsMFAStateReport/releases/latest).
 2. Extract the zip file and run the `.\InstallMe.ps1` script in PowerShell.
 3. When asked where to install the module, press the corresponding number to your choice. The example below installs the module to *`2: C:\Program Files\Windowspowershell\Modules`*. Doing so assumes that you are installing the module from an elevated PowerShell session (as admin).
     ![Installing PsMFAStateReport](../assets/images/powershell-mfa-report/01-install.png)
