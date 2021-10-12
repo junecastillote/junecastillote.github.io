@@ -64,15 +64,9 @@ However, in most cases, admins will want to set up scheduled and unattended repo
 
 > Note: By default, all PsMFAStateReport commands will not display any information on the screen during run time except for warnings and errors. To display all available information, either set the `$InformationPreference` to `Continue` or append the `-InformationAction Continue` parameter to every command.
 
-There are four options to retrieve user MFA data using the `Get-MFAState` command.
-1. All users.
-2. Admins only.
-3. A collection of user objects (returned by the `Get-MsolUser` cmdlet).
-4. One or more specified UserPrincipalNames.
+There are four options to retrieve user MFA data using the `Get-MFAState` command. Which option you choose depends on which set of users you want to generate a report for.
 
-Which option you choose depends on which set of users you want to generate a report for.
-
-To retrieve the MFA data of all users:
+Option 1: Retrieve the MFA data of all users.
 
 ```powershell
 $mfa_data = Get-MFAState -AllUsers
@@ -80,27 +74,27 @@ $mfa_data = Get-MFAState -AllUsers
 
 ![Retrieve all users](../assets/images/powershell-mfa-report/03-retrieve.gif)
 
-To retrieve the MFA data of all admins only:
+Option 2: Retrieve the MFA data of all admins only.
 
 ```powershell
 $mfa_data = Get-MFAState -AdminOnly
 ```
 
-To retrieve the MFA data of a collection of users:
+Option 3: Retrieve the MFA data of a collection of users:
 
 ```powershell
 # Retrieve the MFA data of the first 10 Azure AD users
 $mfa_data = Get-MFAState -UserObject (Get-MsolUser -MaxResults 10)
 ```
 
-To retrieve the MFA data of one or more users by their UserPrincipalName values:
+Option 4: Retrieve the MFA data of one or more users by their UserPrincipalName values:
 
 ```powershell
 $upn = @('user1@domain.com','user2@domain.com')
 $mfa_data = Get-MFAState -UserPrincipalName $upn
 ```
 
-At this point, the MFA data can already be export to CSV if that's all you need. Otherwise, proceed to the next step.
+At this point, the MFA data you already be exported to CSV (`Export-Csv`) if that's all you need. Otherwise, proceed to the next step.
 
 ### Step 2: Generate the Report
 
