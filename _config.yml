@@ -2,21 +2,33 @@
 name: "LazyExchangeAdmin"
 title: "LazyExchangeAdmin"
 description: "PowerShell, Exchange, Office 365, Automation"
-logo: '/assets/images/logo.png'
-favicon: '/assets/images/favicon.ico'
-baseurl:
-google_analytics: 'UA-157526958-1'
-disqus: 'lazyexchangeadmin'
+logo: "/assets/images/logo.png"
+favicon: "/assets/images/favicon.ico"
+baseurl: ""
+google_analytics: "UA-157526958-1"
+disqus: "lazyexchangeadmin"
 mailchimp-list: #'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
 
 # Authors
 authors:
+  leo:
+    name: leo
+    display_name: Leo Castillote
+    avatar: "assets/images/author/arman.jpg"
+    gravatar:
+    email: castillote.arman@gmail.com
+    web:
+    twitter: https://twitter.com/castillotearman
+    facebook: https://www.facebook.com/dianne15arman
+    linkedin: https://www.linkedin.com/in/acastillote
+    github: https://github.com/acast15
+    description: "An IT Specialist and aspiring Technical Writer. Optimistic and persistent in learning."
   arman:
     name: arman
     display_name: Arman Castillote
-    avatar: 'assets/images/author/arman.jpg'
+    avatar: "assets/images/author/arman.jpg"
     gravatar:
     email: castillote.arman@gmail.com
     web:
@@ -28,7 +40,7 @@ authors:
   dan:
     name: dan
     display_name: Mark Daniel Dimalanta
-    avatar: 'assets/images/author/dan.jpg'
+    avatar: "assets/images/author/dan.jpg"
     gravatar:
     email: danieldimalanta@gmail.com
     web:
@@ -40,7 +52,7 @@ authors:
   june:
     name: June
     display_name: June Castillote
-    avatar: 'assets/images/author/june.jpg'
+    avatar: "assets/images/author/june.jpg"
     gravatar:
     email: june.castillote@gmail.com
     web: https://www.lazyexchangeadmin.cyou
@@ -52,7 +64,7 @@ authors:
   rahul:
     name: Rahul
     display_name: Rahul Kadamb
-    avatar: 'assets/images/author/rahul.jpg'
+    avatar: "assets/images/author/rahul.jpg"
     gravatar:
     email:
     web: https://www.nucleustechnologies.com/
@@ -76,7 +88,7 @@ jekyll-archives:
     - categories
   layout: archive
   permalinks:
-    category: '/category/:name/'
+    category: "/category/:name/"
 
 # Pagination
 paginate: 6
