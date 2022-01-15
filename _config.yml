@@ -16,15 +16,15 @@ authors:
   leo:
     name: leo
     display_name: Leo Castillote
-    avatar: "assets/images/author/arman.jpg"
+    avatar: assets/images/author/leo.jpg
     gravatar:
-    email: castillote.arman@gmail.com
+    email: leo.castillote@gmail.com
     web:
-    twitter: https://twitter.com/castillotearman
-    facebook: https://www.facebook.com/dianne15arman
-    linkedin: https://www.linkedin.com/in/acastillote
-    github: https://github.com/acast15
-    description: "An IT Specialist and aspiring Technical Writer. Optimistic and persistent in learning."
+    twitter: https://twitter.com/leocastillote
+    facebook: https://www.facebook.com/leocastillote
+    linkedin: https://www.linkedin.com/in/leocastillote
+    github: https://github.com/casleo
+    description: "Former Technical VA and Blog/Content Ghost Writer. Honing skills in Technical Writing. Passionate and eager about learning new things."
   arman:
     name: arman
     display_name: Arman Castillote
