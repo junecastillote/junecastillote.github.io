@@ -32,13 +32,13 @@ In this post, you’ll learn how to transition your DNS management away from Fre
 Like many other products and services, Cloudflare offers a free basic account. Yes, [Cloudflare](http://cloudflare.com) lets you create a free account with basic support. A pretty good deal for beginners, would you agree? Follow these steps to register and activate your free Cloudflare account.
 
 1. Navigate to the [Cloudflare sign-up page](https://dash.cloudflare.com/sign-up).
-2. On the **Get started with Cloudflare** page, enter your email address and nominate a password for your new Cloudflare account. Make sure that you comply with the password complexity requirements as stated on the page.
+2. On the **Get started with Cloudflare** page, enter your email address and nominate a password for your new Cloudflare account. Ensure that you comply with the password complexity requirements stated on the page.
 
     ![Sign up for a new Cloudflare account](../assets/images/manage-cloudflare-dns/Untitled.png)
 
     Sign up for a new Cloudflare account
 
-3. Click on the Profile icon on the upper-right-hand side and then click **My Profile** to start verifying your email address.
+3. Click on the Profile icon on the upper-right-hand side and click **My Profile** to verify your email address.
 
     ![Open your Cloudflare profile page](../assets/images/manage-cloudflare-dns/Access_Profile.png)
 
@@ -108,7 +108,7 @@ Now that you have access to a brand new Cloudflare account, the next step is to 
 
     ![Untitled](../assets/images/manage-cloudflare-dns/Untitled%207.png)
 
-2. On the **My Domains** page click **Manage Domain** of the site that you are setting up with Cloudflare.
+2. On the **My Domains** page click **Manage Domain** of the site you are setting up with Cloudflare.
 
     ![Click Manage Domain](../assets/images/manage-cloudflare-dns/Untitled%208.png)
 
@@ -120,7 +120,7 @@ Now that you have access to a brand new Cloudflare account, the next step is to 
 
     Open Nameservers page
 
-4. On the Nameservers page, select **Use custom nameservers** and paste the nameservers you copied from Cloudflare. Lastly, click **Change Nameservers**.
+4. Select **Use custom nameservers** and paste the nameservers you copied from Cloudflare on the Nameservers page. Lastly, click **Change Nameservers**.
 
     ![Select Use custom nameservers](../assets/images/manage-cloudflare-dns/Untitled%2010.png)
 
