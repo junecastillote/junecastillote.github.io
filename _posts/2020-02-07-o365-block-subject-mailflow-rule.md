@@ -123,12 +123,12 @@ Send an email using a sender from inside your organization to to another and mak
 
 Auto-generated response from Exchange Online Server
 
-# Summary
+## Summary
 
 In this article, you’ve learned how to create and configure a mail flow rule in an exchange online admin center to protect your users from a deemed malicious email based on the subject.
 
 Mail flow rule offers a lot of conditions, there may be times  that you need to add an exception or adjust more setting to meet the business requirement but just make sure not to mess up as it can lead to a service interruption on email service
 
-# Reference
+## Reference
 
 [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules#how-mail-flow-rules-are-applied-to-messages)

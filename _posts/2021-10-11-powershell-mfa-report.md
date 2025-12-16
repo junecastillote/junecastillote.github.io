@@ -3,7 +3,7 @@ layout: post
 title:  "Generating Azure AD MFA Status Report Using PowerShell"
 author: june
 categories: [AzureAD,Office 365,Scripts]
-tags: [powershell,mfa,administrator,report]
+tags: [powershell,mfa,admin,report]
 image: assets/images/powershell-mfa-report/post_image.jpg
 imageattribution: Photo by <a href="https://www.pexels.com/@eye4dtail?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" target="_blank">George Becker</a>
 description: "Generate MFA status report with summary and graphs using the PsMFAStateReport PowerShell module."
@@ -139,12 +139,14 @@ Send-MFAReport `
 -To @('recipient1@domain.com', 'recipient2@domain.com')
 ```
 The parameters used in the above code are:
+
 - `-ReportDirectory` specifies the directory where it will get the report files.
 - `-SmtpServer` specifies the SMTP relay server IP address or name.
 - `-From` specifies the sender's email address.
 - `-To` specifies the list of recipients.
 
 Other `Send-MFAReport` parameters:
+
 - `-Port` specifies the SMTP port number to use. If not specified, the default is 25.
 - `-UseSSL` is a switch parameter to specify if the SMTP relay requires SSL/TLS connection. For example, Exchange Online (smtp.office365.com) relay requires this.
 - `-Credential` specifies the [`PSCredential`](https://adamtheautomator.com/powershell-get-credential/) object used to authenticate to the SMTP server if required.
