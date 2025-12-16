@@ -3,7 +3,7 @@ layout: post
 title:  "How to Create an NTPasswd Bootable USB Drive"
 author: june
 categories: [How-To,Windows]
-tags: [Password,Windows 10,admin]
+tags: [Password,Windows 10,Administrator]
 image: assets/images/ntpasswd-usb/post-image.jpg
 imageattribution: Photo by <a href="https://www.pexels.com/@pratikgupta?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" target="_blank">Pratik Gupta</a>
 
@@ -32,7 +32,6 @@ There are two ways to use NTPasswd; from a CD or USB. In this post, you will lea
 3. Download the [NTPasswd USB installer](https://pogostick.net/~pnh/ntpasswd/usb140201.zip). As of this writing, the latest installer file name is *usb140201.zip*.
 
 ## Creating the NTPasswd Bootable USB Drive
-
 1. After downloading the NTPasswd USB installer file, extract its contents into the root of the USB flash drive. The image below shows the files on the USB flash drive's root folder after the extraction.
 
     ![Extract the USB installer](../assets/images/ntpasswd-usb/extracted-files.png)

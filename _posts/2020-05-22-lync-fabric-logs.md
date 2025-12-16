@@ -37,9 +37,9 @@ The screenshot above is from one of the FE Servers in my lab setup. As you can s
 
 What's happening is that once the log file reached the size of 128MB, a new log file is generated with an incremental version.
 
-```plaintext
-fabric_traces_130374156934210426_007625.etl
-fabric_traces_130374156934210426_007626.etl
+```
+fabric_traces_130374156934210426_0076**25**.etl
+fabric_traces_130374156934210426_0076**26**.etl
 ```
 
 And there is no arbitrary limit as to how many of these files are created and can eventually consume all available free space.
@@ -52,7 +52,7 @@ The ETL file size not really limited to 128MB and can be adjusted. It's just tha
 
 ## What triggers the data collector to start?
 
-A Task is scheduled to run at system startupwhich calls the `StartTracing.cmd` batch file.
+A Task is scheduled to run at system startup which calls the `StartTracing.cmd` batch file.
 
 ![WinFabricTask.png](/assets/images/WinFabricTask.png)
 
@@ -88,7 +88,7 @@ Logman update trace FabricLeaseLayerTraces -f bincirc --v --cnf -owLogman update
 
 What do the switches mean?
 
-`-f bincrc`= turn on circular logging
+`-f bincrc` = turn on circular logging
 
 `--v` = turn off file versioning
 
@@ -99,7 +99,7 @@ What do the switches mean?
 Next, temporarily stop the logging.
 
 ```powershell
-logman stopfabricleaselayertraceslogman stopfabrictraces
+logman stop fabricleaselayertraceslogman stop fabrictraces
 ```
 
 Then, delete the existing log files

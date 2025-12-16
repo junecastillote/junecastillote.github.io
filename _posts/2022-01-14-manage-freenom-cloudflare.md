@@ -22,7 +22,6 @@ But there is a limited type of DNS records you can add in Freenom. Lucky for you
 In this post, you’ll learn how to transition your DNS management away from Freenom to Cloudflare.
 
 ## Table of Contents <!-- omit in toc -->
-
 - [Creating a Free Cloudflare Account](#creating-a-free-cloudflare-account)
 - [Adding Your Domain to Cloudflare](#adding-your-domain-to-cloudflare)
 - [Changing to Cloudflare Nameservers](#changing-to-cloudflare-nameservers)
@@ -63,6 +62,7 @@ Like many other products and services, Cloudflare offers a free basic account. Y
 
     Continue to Dashboard
 
+
 ## Adding Your Domain to Cloudflare
 
 Now that you have access to a brand new Cloudflare account, the next step is to add your domain.
@@ -100,6 +100,7 @@ Now that you have access to a brand new Cloudflare account, the next step is to 
     ![Copy the Cloudflare name servers](../assets/images/manage-cloudflare-dns/Untitled%206.png)
 
     Copy the Cloudflare name servers
+
 
 ## Changing to Cloudflare Nameservers
 
@@ -142,6 +143,7 @@ Now that you have access to a brand new Cloudflare account, the next step is to 
     ![Site activation confirmation email](../assets/images/manage-cloudflare-dns/Untitled%2013.png)
 
     Site activation confirmation email
+
 
 Congratulations! You can now start managing your DNS records in Cloudflare for a domain hosted in Freenom.
 

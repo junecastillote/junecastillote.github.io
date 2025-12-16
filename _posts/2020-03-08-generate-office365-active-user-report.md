@@ -12,9 +12,9 @@ toc: true
 comments: true
 ---
 
-There are a lot of reports that can be extracted in Microsoft 365 that helps the administrator in managing the tenant, one of these reports is **Active Users** **report**. This report includes information such as the account’s last activity date on each office 365 services, license information about the services and when the license was assigned. This information can be used in license management, instead of buying a new license - the administrator can identify accounts that are not using the service for the x number of days and allocate the associated license to other or newly created accounts.
+There are a lot of reports that can be extracted in Microsoft 365 that helps the administrator in managing the tenant, one of these reports is **Active Users** **report**. This report includes information such as the account’s last activity date on each office 365 services, license information about the services and when the license was assigned. This information can be used in license management, instead of buying a new license - the administrator can identify accounts that are not using the service for the x number of days and allocate the associated license to other or newly created accounts.
 
-You can manually generate the report using [Microsoft 365 Admin Center](https://docs.microsoft.com/en-us/microsoft-365/admin/activity-reports/active-users?view=o365-worldwide) under Reports > usage section. But this is a quite tedious task when you are managing multiple tenants. Fortunately, using PowerShell and Microsoft Graph REST API you can build a script that automatically generates the report.
+You can manually generate the report using [Microsoft 365 Admin Center](https://docs.microsoft.com/en-us/microsoft-365/admin/activity-reports/active-users?view=o365-worldwide) under Reports > usage section. But this is a quite tedious task when you are managing multiple tenants. Fortunately, using PowerShell and Microsoft Graph REST API you can build a script that automatically generates the report.
 
 In this article, you will learn how to generate the active users report in a CSV file using PowerShell and Microsoft Graph REST API.
 
@@ -23,13 +23,13 @@ In this article, you will learn how to generate the active users report in a CSV
 This article will be a walkthrough. If you intend to follow along, make sure you have the following prerequisites set up ahead of time.
 
 - An Office 365 Tenant. [Request for a trial](https://go.microsoft.com/fwlink/p/?LinkID=698279&culture=en-US&country=US) if you do not have it yet.
-- A script editor, like *[Notepad++](https://notepad-plus-plus.org/download/)* or an Integrated Scripting Environment (ISE) like *[Windows PowerShell ISE](https://docs.microsoft.com/en-us/powershell/scripting/components/ise/introducing-the-windows-powershell-ise?view=powershell-5.1)* and *[Visual Studio Code](https://code.visualstudio.com/download)*.
+- A script editor, like *[Notepad++](https://notepad-plus-plus.org/download/)* or an Integrated Scripting Environment (ISE) like *[Windows PowerShell ISE](https://docs.microsoft.com/en-us/powershell/scripting/components/ise/introducing-the-windows-powershell-ise?view=powershell-5.1)* and *[Visual Studio Code](https://code.visualstudio.com/download)*.
 - Windows PowerShell 5.1 or PowerShell Core 6+.
 - A registered app in Azure AD with proper permissions. Please refer to *[Register a new application using the Azure portal](https://docs.microsoft.com/en-us/graph/auth-register-app-v2#register-a-new-application-using-the-azure-portal)* if you don't know how to do that.
 - The registered app must have the following settings.
-  - API to use - **Microsoft Graph API**
-  - API permissions to add - **Reports.Read.All**
-  - API permission type to select - **Application Permission**
+    - API to use - **Microsoft Graph API**
+    - API permissions to add - **Reports.Read.All**
+    - API permission type to select - **Application Permission**
 - The registered app must be *[granted admin consent](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-in-app-registrations).*
 - The *Application ID, Directory ID* and the *Client Secret* of the registered app
 
@@ -59,11 +59,10 @@ For example, to get the list of active users detail for 7 days the request URL w
 
 Once you've satisfied all the requirements, the next step is to acquire the access token that will be used to authorize the requests.
 
- Copy and paste the code below into your script editor. Then, change the value of the `$TenantID`, `$ClientID` and `$ClientSecret` variables with the ones from your registered app. If you don't have this information, refer to *[this link](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#get-values-for-signing-in)* to find out how and where to get them.
+ Copy and paste the code below into your script editor. Then, change the value of the `$TenantID`, `$ClientID` and `$ClientSecret` variables with the ones from your registered app. If you don't have this information, refer to this *[link](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#get-values-for-signing-in)* to find out how and where to get them.
 
 Once you've updated the variables, paste the code into your PowerShell session to run it. The code requests an access token and stores the returned value to the `$token` variable.
 
-    ```powershell
     # CHANGE THESE VALUES
     $TenantID = 'TENANT-ID' #The Directory ID from Azure AD
     $ClientID = 'CLIENT-ID' #The Application ID of the registered app
@@ -75,7 +74,6 @@ Once you've updated the variables, paste the code into your PowerShell session t
     $oauth = Invoke-RestMethod -Method Post -Uri https://login.microsoftonline.com/$tenantID/oauth2/v2.0/token -Body $body
     $token = @{'Authorization'="$($oauth.token_type) $($oauth.access_token)"}
     # ------------------------------------------------------
-    ```
 
 The screenshot below shows the contents of the token would look like.
 
@@ -90,11 +88,9 @@ The Active Users report can be viewed for trends over the last 7 days, 30 days, 
 
 The code snippet below will generate a report for 30 days period and export it to a CSV file. Copy the code below and paste it into your PowerShell session.
 
-    ```powershell
     $graphApiUri = "https://graph.microsoft.com/v1.0/reports/getOffice365ActiveUserDetail(period='D30')"
     $Reports = Invoke-RestMethod -Method Get -Uri $graphApiUri -Headers $token | ConvertFrom-Csv
     $Reports | Export-Csv .\Report.CSV -NoTypeInformation
-    ```
 
 The first command stores the request URL with the period of *D30* in `$graphApiUri` variable.
 
