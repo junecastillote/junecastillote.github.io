@@ -3,7 +3,7 @@ layout: post
 title:  "How To Check If You're An Administrator"
 author: june
 categories: [How-To,Windows,macOS]
-tags: [macOS,Windows 10,Administrator]
+tags: [macOS,Windows 10,admin]
 image: assets/images/check-admin-access/check-admin-access-post-image.jpg
 imageattribution: Photo by <a href="https://unsplash.com/@tfrants?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Tyler Franta</a>
 description: "Do you know if your have admin access on your computer? Let's find out!"

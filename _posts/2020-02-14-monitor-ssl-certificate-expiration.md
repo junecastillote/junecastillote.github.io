@@ -18,7 +18,7 @@ This module, *`LazyExchangeAdmin.ExchangeCertNotify`*, can be used to get a list
 ## Requirements
 
 * Windows PowerShell 5.1 (sorry, no PowerShell Core)
-* Download the module [here](https://github.com/junecastillote/LazyExchangeAdmin.CertX/archive/master.zip), and then export it to your preferred folder.
+* Download the module from [this link](https://github.com/junecastillote/LazyExchangeAdmin.CertX/archive/master.zip), and then export it to your preferred folder.
 
 ## How to Use
 
