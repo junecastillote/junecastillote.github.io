@@ -9,7 +9,7 @@ imageattribution: Photo by <a href="https://www.pexels.com/@eye4dtail?utm_conten
 description: "Generate MFA status report with summary and graphs using the PsMFAStateReport PowerShell module."
 featured: false
 hidden: false
-toc: false
+# toc: false
 comments: true
 ---
 
@@ -20,16 +20,6 @@ Nowadays, securing your credentials is an essential part of your online life. Or
 Perhaps you've already enabled MFA. Now what? How do you track if your users have already registered and set up their MFA details? There are reports available in the Azure AD portal, or you can manually run commands in PowerShell (which you should already know, right?).
 
 However, in most cases, admins will want to set up scheduled and unattended reporting. And that's where the PsMFAStateReport module can help.
-
-- [Requirements](#requirements)
-- [Installing the PsMFAStateReport Module](#installing-the-psmfastatereport-module)
-- [Using the PsMFAStateReport Module](#using-the-psmfastatereport-module)
-  - [Step 1: Retrieving User MFA Data](#step-1-retrieving-user-mfa-data)
-  - [Step 2: Generate the Report](#step-2-generate-the-report)
-  - [Step 3: Send the Report](#step-3-send-the-report)
-- [The Final Results](#the-final-results)
-  - [Email Report](#email-report)
-  - [CSV File Report](#csv-file-report)
 
 ## Requirements
 
