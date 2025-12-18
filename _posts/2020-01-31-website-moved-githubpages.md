@@ -6,10 +6,6 @@ categories: [Non-Tech]
 tags: []
 image: assets/images/website-missing.jpg
 description: "Moving from WordPress.org to Github Pages"
-featured: false
-hidden: false
-toc: false
-comments: true
 ---
 
 My old website just went missing and the hosting company's customer service is not responding at all to my messages.

@@ -3,7 +3,7 @@ layout: post
 title:  "How to Unlock Bitlocker Drives in WinPE"
 author: june
 categories: [How-To,Windows]
-tags: [BitLocker,Windows 10,Administrator,WinPE]
+tags: [BitLocker,Windows 10,admin,WinPE]
 image: assets/images/bitlocker-winpe/bitlocker-winpe-post-image.jpg
 imageattribution: Photo by <a href="https://www.pexels.com/@gnist?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" target="_blank">Gnist Design</a>
 
