@@ -9,7 +9,7 @@ imageattribution: Photo by <a href="https://www.pexels.com/@apasaric?utm_content
 description: "Move your DNS management to Cloudflare for free."
 featured: false
 hidden: false
-toc: false
+# toc: false
 comments: true
 ---
 
