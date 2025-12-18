@@ -10,20 +10,15 @@ imageattribution: Photo by <a href="https://www.pexels.com/@pratikgupta?utm_cont
 description: "Learn how to create a bootable NTPasswd USB drive for when you need to reset a Windows user password or edit the registry offline."
 featured: false
 hidden: false
-toc: false
+# toc: false
 comments: true
 ---
-
-<br>
 
 We're humans and we forget things like passwords. But if you forget your Windows 10 user account password, you can still reset it so you can gain access to your computer again. And for that, you'll need the [NTPasswd](https://pogostick.net/~pnh/ntpasswd/) utility.
 
 NTPasswd is an old tool (last update was on 2014) that admins and users can use to reset local user passwords, promote standard users to administrators, and enable/unlock users including the built-in administrator account.
 
 There are two ways to use NTPasswd; from a CD or USB. In this post, you will learn ways to create a bootable USB drive containing the NTPasswd utility.
-
-- [Requirements](#requirements)
-- [Creating the NTPasswd Bootable USB Drive](#creating-the-ntpasswd-bootable-usb-drive)
 
 ## Requirements
 
