@@ -10,17 +10,11 @@ imageattribution: Photo by <a href="https://www.pexels.com/@gnist?utm_content=at
 description: "Create a WinPE bootable ISO or CD with Bitlocker Support."
 featured: false
 hidden: false
-toc: false
+# toc: false
 comments: true
 ---
 
-<br>
-
 If you need to access the contents of a Bitlocker-locked drive in Windows Preinstallation Environment, you'll need a Window PE that supports Bitlocker operations.
-
-- [Requirements](#requirements)
-- [Creating the WinPE Bootable Image / Media](#creating-the-winpe-bootable-image--media)
-- [Unlocking a Bitlocker Drive in WinPE](#unlocking-a-bitlocker-drive-in-winpe)
 
 ## Requirements
 
