@@ -21,13 +21,6 @@ But there is a limited type of DNS records you can add in Freenom. Lucky for you
 
 In this post, you’ll learn how to transition your DNS management away from Freenom to Cloudflare.
 
-## Table of Contents <!-- omit in toc -->
-
-- [Creating a Free Cloudflare Account](#creating-a-free-cloudflare-account)
-- [Adding Your Domain to Cloudflare](#adding-your-domain-to-cloudflare)
-- [Changing to Cloudflare Nameservers](#changing-to-cloudflare-nameservers)
-- [Conclusion](#conclusion)
-
 ## Creating a Free Cloudflare Account
 
 Like many other products and services, Cloudflare offers a free basic account. Yes, [Cloudflare](http://cloudflare.com) lets you create a free account with basic support. A pretty good deal for beginners, would you agree? Follow these steps to register and activate your free Cloudflare account.
