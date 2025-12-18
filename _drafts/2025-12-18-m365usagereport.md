@@ -257,4 +257,4 @@ Once you’re done selecting the permissions, click on the **Add permissions** b
 
 Click **Add a permission**
 Under "**Request API permissions**," click "**APIs my organization uses**."
-Search O***ffice 36 Exchange Online*** and click on the result.
+Search ***Office 36 Exchange Online*** and click on the result.
