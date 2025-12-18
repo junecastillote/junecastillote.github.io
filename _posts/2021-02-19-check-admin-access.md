@@ -9,7 +9,7 @@ imageattribution: Photo by <a href="https://unsplash.com/@tfrants?utm_source=uns
 description: "Do you know if your have admin access on your computer? Let's find out!"
 featured: false
 hidden: false
-toc: false
+# toc: false
 comments: true
 ---
 
@@ -17,15 +17,6 @@ comments: true
 Unless you installed and set up your computer's operating system, there's a chance that your user account doesn't have local administrator access. Your day-to-day tasks may not need admin access until you install software or make system-wide changes.
 
 But how do you find out whether you have local administrator access to your computer? Well, that's what you'll learn here.
-
-- [Windows 10](#windows-10)
-  - [Method 1: Windows Settings (Accounts)](#method-1-windows-settings-accounts)
-  - [Method 2: Control Panel (User Accounts)](#method-2-control-panel-user-accounts)
-  - [Method 3: Command Prompt](#method-3-command-prompt)
-  - [Method 4: PowerShell](#method-4-powershell)
-- [Linux](#linux)
-- [macOS](#macos)
-- [Conclusion](#conclusion)
 
 ## Windows 10
 
