@@ -13,13 +13,11 @@ toc: false
 comments: true
 ---
 
-<br>
-
 In the previous article, you learned **[How to Get a Free Domain From Freenom](https://lazyexchangeadmin.cyou/freenom-free-domain/)**. Now that you have a domain, you could continue managing your DNS records using the Freenom DNS tools if you wish.
 
 But there is a limited type of DNS records you can add in Freenom. Lucky for you, you are not stuck with Freenom to manage your DNS records. Cloudflare offers free and more advanced features.
 
-In this post, you’ll learn how to transition your DNS management away from Freenom to Cloudflare.
+In this post, you'll learn how to transition your DNS management away from Freenom to Cloudflare.
 
 ## Creating a Free Cloudflare Account
 
@@ -50,7 +48,7 @@ Like many other products and services, Cloudflare offers a free basic account. Y
 
     Verifying your email address
 
-6. Once you’ve successfully verified your email address, you will see the following prompt below. Click **Continue to the dashboard**.
+6. Once you've successfully verified your email address, you will see the following prompt below. Click **Continue to the dashboard**.
 
     ![Continue to Dashboard](../assets/images/manage-cloudflare-dns/Email-Verified.png)
 
@@ -130,7 +128,7 @@ Now that you have access to a brand new Cloudflare account, the next step is to 
 
     Click Finish later
 
-7. Wait for the confirmation email. When Cloudflare confirms that you’ve successfully updated your domain’s nameservers, you will receive an email similar to the example below.
+7. Wait for the confirmation email. When Cloudflare confirms that you've successfully updated your domain's nameservers, you will receive an email similar to the example below.
 
     ![Site activation confirmation email](../assets/images/manage-cloudflare-dns/Untitled%2013.png)
 
