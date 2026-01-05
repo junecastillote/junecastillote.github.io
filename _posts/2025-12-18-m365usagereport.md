@@ -218,14 +218,14 @@ The output will be similar to this:
 
 ### Register a New Azure AD App
 
-Navigate to the [Microsoft Entra admin center](https://entra.microsoft.com/) and navigate to ***App registrations***. Then, click on **New Registration**.
+Navigate to the [Microsoft Entra admin center](https://entra.microsoft.com/) and navigate to ***App registrations***. Then, click **New Registration**.
 
 ![New registration](/assets/images/m365usagereport/new_reg.png){: .normal } _New registration_
 
 - In the **Name**, type in ***Microsoft 365 Usage Reports*** (or any name you prefer).
 - In the **Supported account types**, select ***Accounts in this organizational directory only***.
 - In the **Redirect URI (optional)**, select ***Web*** and type in `http://localhost`.
-- Click on **Register**.
+- click **Register**.
 
 ![Register an application](/assets/images/m365usagereport/reg_name.png){: .normal } _Register an application_
 
@@ -235,7 +235,7 @@ After the App has been registered, copy the Application (client) ID and Director
 
 ### Adding the Required Microsoft Graph API Permissions
 
-Go to **API Permissions** and click on the **Add a Permission** button
+Go to **API Permissions** and click the **Add a Permission** button
 
 ![Add a permission](/assets/images/m365usagereport/add_a_permission.png){: .normal } _Add a permission_
 
@@ -243,13 +243,13 @@ In the Request API Permission, select Microsoft Graph API.
 
 ![Request permission](/assets/images/m365usagereport/request_api_permission.png){: .normal } _Request permission_
 
-In "**What type of permissions does your application require?",** click on **Application**. From the list of permissions, search for and enable the following permissions.
+In "**What type of permissions does your application require?",** click **Application**. From the list of permissions, search for and enable the following permissions.
 
 - `Reports.Read.All`
 - `Directory.Read.All`
 - `Mail.Send`
 
-Once you’re done selecting the permissions, click on the **Add permissions** button.
+Once you're done selecting the permissions, click the **Add permissions** button.
 
 ![Application permissions](/assets/images/m365usagereport/application_permissions.png){: .normal } _Application permissions_
 
@@ -257,4 +257,133 @@ Once you’re done selecting the permissions, click on the **Add permissions** b
 
 Click **Add a permission**
 Under "**Request API permissions**," click "**APIs my organization uses**."
-Search O***ffice 36 Exchange Online*** and click on the result.
+Search O***ffice 36 Exchange Online*** and click the result.
+
+![Search office 36 exchange online](/assets/images/m365usagereport/apis_my_org.png)
+
+Search and enable the `Exchange.ManageAsApp` permission and click **Add permissions**.
+
+![Add Exchange.ManageAsApp](/assets/images/m365usagereport/exo_app_perms.png)
+
+Now, remove the `User.Read` permission as it is not needed.
+
+![Remove User.Read](/assets/images/m365usagereport/remove_unused_perm.png)
+
+### Creating and Uploading a Self-Signed Certificate
+
+> Note: You can use either a Certificate or a Client Secret for API authentication. This example shows you only how to create a certificate.
+>
+
+Copy the code below and run it in PowerShell. The script will create a new self-signed certificate in the personal certificate store with a validity of five (5) years. Then, exports the DER-encoded `M365UsageReport.cer` file to the current working directory.
+
+```powershell
+# Create a self-sign certificate in the personal certificate store with 5-year validity.
+
+$name = 'M365UsageReport'
+
+$certSplat = @{
+  Subject = "CN=$($name)"
+  NotBefore = ((Get-Date).AddDays(-1))
+  NotAfter = ((Get-Date).AddYears(5))
+  CertStoreLocation = "Cert:\CurrentUser\My"
+  Provider          = "Microsoft Enhanced RSA and AES Cryptographic Provider"
+  HashAlgorithm     = "SHA256"
+  KeySpec           = "KeyExchange"
+}
+$selfSignedCertificate = New-SelfSignedCertificate @certSplat
+
+# Export the certificate (.CER)
+Export-Certificate -Cert $selfSignedCertificate -FilePath "$($name).cer"
+```
+
+![New Cert](/assets/images/m365usagereport/new_cert.png)
+
+After running the code, you can see the new certificate is in the personal certificate store.
+
+![Certificate in store](/assets/images/m365usagereport/cert_in_store.png)
+
+> NOTE: If you plan to deploy the script to another machine, make sure to export the PFX certificate to file using the PowerShell Export-PfxCertificate cmdlet or MMC and import it to another machine.
+{: .prompt-info }
+
+Now that you have the certificate file (.cer), the next step is to upload the certificate to the Entra App. Follow these next steps.
+
+1. Go to **Certificates & Secrets** and click the **Upload Certificate** button.
+2. Click the browse button.
+3. Locate the certificate file and click **Open**.
+4. Click **Add**.
+
+![click upload certificate](/assets/images/m365usagereport/upload_cert.png)
+
+You should now see the certificate was uploaded. Copy the **Thumbprint** value.
+
+![new certificate uploaded](/assets/images/m365usagereport/cert_uploaded.png)
+
+### Granting Admin Consent
+
+> Note: Only a Global Admin, Application Administrator, and Privileged Role Administrator can grant consent on behalf of the Microsoft 365 Tenant to the application. If you do not have the proper rights, ask another administrator with sufficient role(s) to grant the consent.
+{: .prompt-info }
+
+You should see that the new API permissions have been added, but the status is '***Not granted' for [tenant]***. To complete the permission grant, click the "**Grant admin consent for [tenant]"** button.
+
+![Grant Admin Consent](/assets/images/m365usagereport/grant_admin_consent.png)
+
+When asked to confirm, click **Yes**.
+
+![Confirm Grant](/assets/images/m365usagereport/confirm_grant.png)
+
+The API permissions status should change to **Granted for [tenant]**
+
+![Consent granted](/assets/images/m365usagereport/consent_granted.png) _Consent granted_
+
+Now you should have the following details available:
+
+- `Client ID`
+- `Tenant ID`
+- `Certificate Thumbprint`
+
+### Assigning the Exchange Administrator Role
+
+This module also connects to Exchange Online PowerShell to generate Exchange-related reports, such as ATP detections and mail traffic summaries. And according to the official Microsoft guide to setting up [app-only authentication to Exchange Online](https://learn.microsoft.com/en-us/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps), the app's service principal must have an `Exchange Administrator` role.
+
+Under the **Identity**, go to **Roles & admin**.
+Search for the `Exchange Administrator` role and click the result.
+
+![Open Exchange Admin Role](/assets/images/m365usagereport/open_exo_admin_roles.png)
+
+Click **Add assignments**
+
+![Click Add assignments](/assets/images/m365usagereport/add_exo_assignments.png)
+
+Click the **No members selected** link.
+
+![Click No members selected](/assets/images/m365usagereport/click_no_members.png)
+
+Search your app's name, click it on the list, and click **Select**.
+
+![Search your app's name](/assets/images/m365usagereport/search_app_name.png)
+
+Click **Next**.
+
+![Click Next](/assets/images/m365usagereport/select_member.png)
+
+Select **Active**, enable **Permanently assigned**, type the justification text, and click **Assign**.
+
+![Click Assign](/assets/images/m365usagereport/click_assign.png)
+
+### Sample Report
+
+### Email
+
+Below is an example of the HTML usage report sent as an email.
+
+![Email Report](/assets/images/m365usagereport/sample_report_email.png)
+
+### HTML File
+
+The HTML file report is saved at `"$env:TEMP\M365UsageReport\<org-domain>\Microsoft_365_Usage_Report.HTML"`. Its contents appear exactly as the body of the email report above.
+
+### Raw Data CSV Files
+
+The raw data CSV files are also found at `"$env:TEMP\M365UsageReport\<org-domain>"`.
+
+![CSV Report](/assets/images/m365usagereport/sample_report_csv.png)
